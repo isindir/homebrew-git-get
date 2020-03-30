@@ -13,6 +13,6 @@ class GitGet < Formula
   end
 
   test do
-    system "#{bin}/git-get", "--version"
+    system "#{bin}/git-get", "version", "--long"
   end
 end
