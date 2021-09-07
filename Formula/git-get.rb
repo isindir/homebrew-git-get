@@ -3,6 +3,7 @@ class GitGet < Formula
   homepage "https://github.com/isindir/git-get"
   version "0.0.5"
   sha256 "44972ea265f46dbdb15ee1612a4ee6d4e920df57ee5d6de6a0c76bb5892fc4cc"
+  head "https://github.com/isindir/git-get.git"
 
   url "https://github.com/isindir/git-get/archive/#{version}.tar.gz"
 
