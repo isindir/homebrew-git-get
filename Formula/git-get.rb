@@ -1,5 +1,5 @@
 class GitGet < Formula
-  desc "- clone/fetch project repositories"
+  desc "Tool to clone/fetch project repositories an-mass using Gitfile configuration file"
   homepage "https://github.com/isindir/git-get"
   version "0.0.5"
   sha256 "44972ea265f46dbdb15ee1612a4ee6d4e920df57ee5d6de6a0c76bb5892fc4cc"
