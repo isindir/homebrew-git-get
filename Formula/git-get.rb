@@ -1,10 +1,9 @@
 class GitGet < Formula
-  desc "git-get - clone/fetch project repositories"
+  desc "- clone/fetch project repositories"
   homepage "https://github.com/isindir/git-get"
-  version "0.0.4"
-  sha256 "3ff8664555b87b11a8417a070f6b2b90268de63239c792a090c85f5eefc77d18"
-
   url "https://github.com/isindir/git-get/archive/#{version}.tar.gz"
+  version "0.0.5"
+  sha256 "44972ea265f46dbdb15ee1612a4ee6d4e920df57ee5d6de6a0c76bb5892fc4cc"
   depends_on "go" => :build
 
   def install
