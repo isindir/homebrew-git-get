@@ -1,8 +1,8 @@
 class GitGet < Formula
   desc "Tool to clone/fetch project repositories an-mass using Gitfile configuration file"
   homepage "https://github.com/isindir/git-get"
-  version "0.0.5"
-  sha256 "44972ea265f46dbdb15ee1612a4ee6d4e920df57ee5d6de6a0c76bb5892fc4cc"
+  version "0.0.6"
+  sha256 "f27e4bdb613007d36f8027e34d76206f984c35b0bff6ed081db7ef1b524bacd2"
   head "https://github.com/isindir/git-get.git"
 
   url "https://github.com/isindir/git-get/archive/#{version}.tar.gz"
