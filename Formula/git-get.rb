@@ -1,8 +1,9 @@
 class GitGet < Formula
-  desc "Tool to clone/fetch project repositories an-mass using Gitfile configuration file"
+  desc %q{Tool to clone/fetch project repositories an-mass using Gitfile configuration file.
+git-get can also generate Gitfile from github, gitlab or bitbucket, to have all repositories user has access to.}
   homepage "https://github.com/isindir/git-get"
-  version "0.0.6"
-  sha256 "f27e4bdb613007d36f8027e34d76206f984c35b0bff6ed081db7ef1b524bacd2"
+  version "0.0.7"
+  sha256 "67d194132eac57a65ec3d80c3466017cc37c0098afae92fdc696feb1a02dbd88"
   head "https://github.com/isindir/git-get.git"
 
   url "https://github.com/isindir/git-get/archive/#{version}.tar.gz"
