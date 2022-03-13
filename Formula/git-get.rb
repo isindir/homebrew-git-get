@@ -5,21 +5,21 @@
 class GitGet < Formula
   desc "Tool to clone/fetch project repositories an-mass using Gitfile configuration file. git-get can also generate Gitfile from github, gitlab or bitbucket, to have all repositories user has access to."
   homepage "https://github.com/isindir/git-get"
-  version "0.0.14"
+  version "0.0.15"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/isindir/git-get/releases/download/v0.0.14/git-get_0.0.14_Darwin_x86_64.tar.gz"
-      sha256 "dcbea401fcf5032c938f4b92b12b54f764811f870814a8d66e259d0ee61cb298"
+    if Hardware::CPU.arm?
+      url "https://github.com/isindir/git-get/releases/download/v0.0.15/git-get_0.0.15_Darwin_arm64.tar.gz"
+      sha256 "34ed5d2a093e022a643a6aa0bed924380d62d50592d5573e97b9dfddb457482a"
 
       def install
         bin.install "git-get"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/isindir/git-get/releases/download/v0.0.14/git-get_0.0.14_Darwin_arm64.tar.gz"
-      sha256 "09bfa92196f173f544433910518c2e09a99cee1a4bf534f2da30c71bbf2a86ab"
+    if Hardware::CPU.intel?
+      url "https://github.com/isindir/git-get/releases/download/v0.0.15/git-get_0.0.15_Darwin_x86_64.tar.gz"
+      sha256 "375f7cbc29cd67f340544cb7b9290d772c12ee7a26c988f0ff736f7cc774dd58"
 
       def install
         bin.install "git-get"
@@ -29,16 +29,16 @@ class GitGet < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/isindir/git-get/releases/download/v0.0.14/git-get_0.0.14_Linux_arm64.tar.gz"
-      sha256 "06df94faee754c9f04a2a0e81809d7afe03778d9123027b4c6df47f2c79c7257"
+      url "https://github.com/isindir/git-get/releases/download/v0.0.15/git-get_0.0.15_Linux_arm64.tar.gz"
+      sha256 "225dc45e6074ba57b7c94a09dcb40ed848b1bbf3f68ce84937f218f1575ae576"
 
       def install
         bin.install "git-get"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/isindir/git-get/releases/download/v0.0.14/git-get_0.0.14_Linux_x86_64.tar.gz"
-      sha256 "547a1bbc349badbadecb0fa334d965390bb7ebf48fce4e4ba01100da94f4e473"
+      url "https://github.com/isindir/git-get/releases/download/v0.0.15/git-get_0.0.15_Linux_x86_64.tar.gz"
+      sha256 "9d5700894917ddd9523f4d3538990a43514bbba7c44bc8157753a5e5e6886c6c"
 
       def install
         bin.install "git-get"
