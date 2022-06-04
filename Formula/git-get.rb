@@ -5,21 +5,21 @@
 class GitGet < Formula
   desc "Tool to clone/fetch project repositories an-mass using Gitfile configuration file. git-get can also generate Gitfile from github, gitlab or bitbucket, to have all repositories user has access to."
   homepage "https://github.com/isindir/git-get"
-  version "0.0.16"
+  version "0.0.17"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/isindir/git-get/releases/download/v0.0.16/git-get_0.0.16_Darwin_x86_64.tar.gz"
-      sha256 "43ca65701466f5083b2e02901c96d1c3ef5a7c6cf340308524178f6ad653ad5b"
+    if Hardware::CPU.arm?
+      url "https://github.com/isindir/git-get/releases/download/v0.0.17/git-get_0.0.17_Darwin_arm64.tar.gz"
+      sha256 "54b86694ab1ebbd584ca79f4c20f8ab2388fbdcab99e2095e6bd495b9c65a32c"
 
       def install
         bin.install "git-get"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/isindir/git-get/releases/download/v0.0.16/git-get_0.0.16_Darwin_arm64.tar.gz"
-      sha256 "60827d96e526a695f55af06896534bfeb1f4fb25a5282a676232b2acfdc70343"
+    if Hardware::CPU.intel?
+      url "https://github.com/isindir/git-get/releases/download/v0.0.17/git-get_0.0.17_Darwin_x86_64.tar.gz"
+      sha256 "6449fec8057e97be64b8f528638dd4f887e4667c69ddd38884ede7b71c90f627"
 
       def install
         bin.install "git-get"
@@ -29,16 +29,16 @@ class GitGet < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/isindir/git-get/releases/download/v0.0.16/git-get_0.0.16_Linux_x86_64.tar.gz"
-      sha256 "02a6510e5756d28b5d3e4e226826ce4f31a9607fb0c8a373872a3217a063de88"
+      url "https://github.com/isindir/git-get/releases/download/v0.0.17/git-get_0.0.17_Linux_x86_64.tar.gz"
+      sha256 "512330161217ac7d233828ce9ff94012fed6b5f8409dc40d9f89f41e1f9e61f2"
 
       def install
         bin.install "git-get"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/isindir/git-get/releases/download/v0.0.16/git-get_0.0.16_Linux_arm64.tar.gz"
-      sha256 "16d60c033ebc85b08ed983c074a1f3f273a1ede69b9dd227a6eb684a16163fca"
+      url "https://github.com/isindir/git-get/releases/download/v0.0.17/git-get_0.0.17_Linux_arm64.tar.gz"
+      sha256 "e4d2d4b048ca25d89fd14eaa3f2d69a50fdccbbfa4a90341857e1eac06cf0760"
 
       def install
         bin.install "git-get"
