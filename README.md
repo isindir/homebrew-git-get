@@ -6,5 +6,5 @@
 
 ```bash
 $ brew tap isindir/git-get
-$ brew install git-get
+$ brew install --cask isindir/git-get/git-get
 ```
